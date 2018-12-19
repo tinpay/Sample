@@ -1,0 +1,20 @@
+platform :ios, '9.0'
+
+workspace 'SubprojectSample.xcworkspace'
+project 'SubprojectSample.xcodeproj'
+
+inhibit_all_warnings!
+use_frameworks!
+
+target 'SubprojectSample' do
+    project 'SubprojectSample.xcodeproj'
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'Alamofire'
+end
+
+target 'Common' do
+    project 'Common/SubSampleCommon/Common.xcodeproj'
+    pod 'Alamofire'
+
+end 
