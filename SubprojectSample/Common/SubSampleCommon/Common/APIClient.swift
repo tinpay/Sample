@@ -17,6 +17,7 @@ public class APIClient {
         
         print("request send. \(AlamofireVersionNumber)")
         
-        print("")
+        print("1")
+        print("2")
     }
 }
